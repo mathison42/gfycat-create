@@ -77,7 +77,7 @@ function callCreateGfycat(url, start, duration) {
     data: data,
     success: function(msg) {
       // Once POST call returns, update the page
-      updatePage(msg.gfyname)
+      updateList(msg.gfyname)
     }
   })
   .done(function(msg) {
@@ -91,12 +91,17 @@ function callCreateGfycat(url, start, duration) {
 
 /**
  * gfyname The unique name given to the Gif by the Gfycat API.
- * result Updates the HTML page with the Gfycat's gif name and link.
+ * result Updates the HTML list with the new Gfycat's gif name and link.
  */
-function updatePage(gfyname) {
-  var urlOutput = document.getElementById('gfycatResult');
-  urlOutput.innerHTML = gfyname;
-  urlOutput.setAttribute('href', 'https://gfycat.com/' + gfyname);
+function updateList(gfyname) {
+  var list = document.getElementById('gfycatResults');
+  var newItemGfycat = document.createElement('li');
+  var newLinkGfycat = document.createElement('a');
+  newLinkGfycat.href = 'https://gfycat.com/' + gfyname
+  var newNameGfycat = document.createTextNode(gfyname);
+  newLinkGfycat.appendChild(newNameGfycat);
+  newItemGfycat.appendChild(newLinkGfycat);
+  list.appendChild(newItemGfycat);
 }
 
 /**
