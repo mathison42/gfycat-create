@@ -1,11 +1,13 @@
 <html>
-  <head>
-    <title>Create Gfycat Gif</title>
-  <head>
-  <body>
+    <head>
+        <title>Create Gfycat and Streamable Gifs</title>
+    </head>
+    <body>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="general-functions.js"></script>
     <script type="text/javascript" src="gfycat-functions.js"></script>
-    <h1>Create Gfycat Gif</h1>
+    <script type="text/javascript" src="streamable-functions.js"></script>
+    <h1>Create New Gif</h1>
     <form>
       <p>Video URL:
         <input type="text" name="url" size="45" placeholder="https://youtu.be/SaVJyAwVUzY" />
@@ -14,11 +16,24 @@
         <input type="text" name="start" size="5" placeholder="49" />
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Duration:
         <input type="text" name="duration" size="5" placeholder="6" />
-        <input type="button" name="create" value="Create" onclick="createGfycat(this.form)"/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <br/>
+        Streamable Username:
+        <input type="text" name="streamUsername" size="20" placeholder="user@email.com" />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <br/>
+        Streamable Password:
+        <input type="password" name="streamPassword" size="20" placeholder="****" />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <br/>
+        <input type="button" name="create" value="Create Gfycat Gif" onclick="createGfycat(this.form)"/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <br/>
+        <input type="button" name="create" value="Create Streamable Gif" onclick="createStreamable(this.form)"/>
       </p>
     </form>
-    <ol id="gfycatResults"/>
+    <ol id="gifResults"/>
     </ol>
-    <p>Note: New Gfycat gifs can take a few minutes to generate.</p>
-  </body>
+    <p>Note: New Gifs can take a few minutes to generate.</p>
+    </body>
 </html>
