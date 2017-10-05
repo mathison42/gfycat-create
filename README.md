@@ -24,6 +24,18 @@ Simple web page to create gifs using Gfycat's API.
 
   `Example length/duration: 6`
 
-4. Click "Create" to generate your new Gfycat gif
+4. Click "Create Gfycat Gif" to generate your new Gfycat gif.
 
   `Example: https://gfycat.com/SilverDiligentAruanas`
+
+# Streamable Gif Maker
+
+Simple web page to create gifs using Streamable's API.
+
+Follow directions 1, 2 and 3 above.
+
+4. Specify Streamable Username (email) and Password credentials. All new Streamable Gifs must have valid credentials. If you do not have these credentials, create them on Streamable's webpage.
+
+5. Click "Create Streamable Gif" to generate your new Streamable gif.
+
+  `Example: https://streamable.com/vd41b`
