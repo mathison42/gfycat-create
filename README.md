@@ -29,6 +29,7 @@ Simple web page to create gifs using Gfycat's API.
   `Example: https://gfycat.com/SilverDiligentAruanas`
 
 # Streamable Gif Maker
+Beware: 3/18/2018 Streamable added CORS to their API headers late 2017. Code no longer works.
 
 Simple web page to create gifs using Streamable's API.
 
